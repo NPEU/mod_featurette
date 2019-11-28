@@ -28,36 +28,71 @@
     </files>
 
     <config>
-        <fields name="params">
-            <fieldset name="basic">
+        <fieldset name="basic">
+            <field
+                name="content"
+                type="editor"
+                label="MOD_FEATURETTE_CONTENT_LABEL"
+                description="MOD_FEATURETTE_CONTENT_DESC"
+                default=""
+                required="true"
+                buttons="false"
+                filter="JComponentHelper::filterText"
+            />
+            <fields name="params">
                 <field
-                    name="thing"
-                    type="text"
-                    label="MOD_FEATURETTE_THING_LABEL"
-                    description="MOD_FEATURETTE_THING_DESC"
-                    default=""
-                    required="true"
+                    name="image"
+                    type="media"
+                    label="MOD_FEATURETTE_IMAGE_LABEL"
+                    description="MOD_FEATURETTE_IMAGE_DESC"
                 />
-            </fieldset>
-            <fieldset name="advanced">
+                <!--<field
+                    name="caption"
+                    type="textarea"
+                    label="MOD_FEATURETTE_CAPTION_LABEL"
+                    description="MOD_FEATURETTE_CAPTION_DESC"
+                />-->
                 <field
-                    name="adv_thing"
+                    name="alt"
                     type="text"
-                    label="MOD_FEATURETTE_ADV_THING_LABEL"
-                    description="MOD_FEATURETTE_ADV_THING_DESC"
-                    default=""
+                    label="MOD_FEATURETTE_IMAGE_ALT_LABEL"
+                    description="MOD_FEATURETTE_IMAGE_ALT_DESC"
                 />
-            </fieldset>
-            <fieldset name="custom_fieldset">
                 <field
-                    name="c1_thing"
-                    type="text"
-                    label="MOD_FEATURETTE_CUSTOM_THING_LABEL"
-                    description="MOD_FEATURETTE_CUSTOM_THING_DESC"
-                    default=""
-                />
-            </fieldset>
-        </fields>
+                    name="shape"
+                    type="radio"
+                    default="square"
+                    label="MOD_FEATURETTE_IMAGE_SHAPE_LABEL"
+                    description="MOD_FEATURETTE_IMAGE_SHAPE_DESC"
+                    class="btn-group"
+                >
+                    <option value="square">MOD_FEATURETTE_IMAGE_SHAPE_SQUARE</option>
+                    <option value="round">MOD_FEATURETTE_IMAGE_SHAPE_ROUND</option>
+                </field>
+                <field
+                    name="border"
+                    type="radio"
+                    default="none"
+                    label="MOD_FEATURETTE_IMAGE_BORDER_LABEL"
+                    description="MOD_FEATURETTE_IMAGE_BORDER_DESC"
+                    class="btn-group"
+                >
+                    <option value="none">MOD_FEATURETTE_IMAGE_BORDER_NONE</option>
+                    <option value="standard">MOD_FEATURETTE_IMAGE_BORDER_STANDARD</option>
+                </field>
+                <field
+                    name="fit"
+                    type="radio"
+                    default="cover"
+                    label="MOD_FEATURETTE_IMAGE_FIT_LABEL"
+                    description="MOD_FEATURETTE_IMAGE_FIT_DESC"
+                    class="btn-group"
+                >
+                    <option value="cover">MOD_FEATURETTE_IMAGE_FIT_COVER</option>
+                    <option value="contain">MOD_FEATURETTE_IMAGEE_FIT_CONTAIN</option>
+                </field>
+            </fields>
+        </fieldset>
     </config>
 
 </extension>
