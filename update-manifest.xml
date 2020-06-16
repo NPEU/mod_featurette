@@ -16,6 +16,7 @@
             <tag>stable</tag>
         </tags>
     </update>
+    <update>
         <name>NPEU: mod_featurette</name>
         <description>Joomla! mod_featurette module</description>
         <element>mod_featurette</element>
