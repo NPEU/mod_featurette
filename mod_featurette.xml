@@ -45,6 +45,7 @@
                     type="media"
                     label="MOD_FEATURETTE_IMAGE_LABEL"
                     description="MOD_FEATURETTE_IMAGE_DESC"
+                    directory="images"
                 />
                 <!--<field
                     name="caption"
