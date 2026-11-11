@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="module" client="site" method="upgrade">
 
+    <customContent />
+
     <name>MOD_FEATURETTE</name>
     <author>Andy Kirk</author>
     <authorEmail>andy.kirk@npeu.ox.ac.uk</authorEmail>
@@ -30,6 +32,11 @@
 
     <config>
         <fieldset name="basic">
+            <!--
+                Joomla fixed a "bug" that now prevents this sort of content field definition.
+                It's actually added by Joomla in a convoluted way so we need to use the
+                <customContent />
+                tag above.
             <field
                 name="content"
                 type="editor"
@@ -39,7 +46,7 @@
                 required="true"
                 buttons="false"
                 filter="\Joomla\CMS\Component\ComponentHelper::filterText"
-            />
+            />-->
             <fields name="params">
                 <field
                     name="image"
